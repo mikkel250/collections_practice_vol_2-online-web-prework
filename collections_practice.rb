@@ -25,8 +25,8 @@ end
 def count_elements(arg)
   counter = []
   arg.each do |el|
-  	el.each do |key, increment|
- 		name#{increment} = key
+  	el.each do |key|
+ 		name = key #this will just assign the last element to the variable. need to compare it here with an if statement and then just assign it to counter
  		  counter.each do |elem|
  			  elem.each do |key, val|
  			    if elem[name].has_value?(name)
