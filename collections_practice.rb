@@ -23,18 +23,23 @@ def remove_non_strings(arg)
 end
 
 def count_elements(arg)
-  counter = []
-  arg.each do |element| #need to iterate over array of hashes
-    element.each do |hash|                      #pull out each hash  
-    hash.each do |key, value| #extra step? #compare it to the counter hash
-      if hash[key].has_value?(value) #if the counter hash contains that value (for the name)
-        counter[[count] += 1  # increment the count=> +1
-      else
-        inst[] #otherwise, add the value from that element's hash to a new key value pair with a count of 1
-      end  
-    end
-  end
-  inst
+  elements.each do |el|
+  	el.each do |key|
+ 		name = key
+ 		  counter.each do |elem|
+ 			  elem.each do |key, val|
+ 			    if elem[name].has_value?(name)
+ 				    elem[val] += 1
+ 			    else
+ 			    	counter << {:name=> name, :count => 1}
+ 			    end # if
+	       end #do 4
+	     end # do 3
+	   end #do 2
+	 end #do 1
+end #def
+
+  
 end
 
 def merge_data(arg)
