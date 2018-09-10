@@ -26,7 +26,7 @@ def count_elements(arg)
   counter = []
   arg.each do |element| #need to iterate over array of hashes
     element.each do |hash|                      #pull out each hash  
-    hash.each do |key, value| #compare it to the counter hash
+    hash.each do |key, value| #extra step? #compare it to the counter hash
       if hash[key].has_value?(value) #if the counter hash contains that value (for the name)
         counter[[count] += 1  # increment the count=> +1
       else
