@@ -23,12 +23,14 @@ def remove_non_strings(arg)
 end
 
 def count_elements(arg)
-  inst = []
-  arg.each do |key, value| 
-    inst.each do |key, value| 
-      if inst[key].has_key? inst < key
+  counter = []
+  arg.each do |key, value| #need to iterate over array of hashes
+                          #pull out each hash  
+    inst.each do |element| #compare it to the counter hash
+      if inst[element].has_value?(value) #if the counter hash contains that value (for the name)
+        inst[count] += 1  # increment the count=> +1
       else
-        inst[key] += 1
+        inst[] #otherwise, add the 
       end  
     end
   end
