@@ -25,8 +25,8 @@ end
 def count_elements(arg)
   counter = []
   arg.each do |el|
-  	el.each do |key|
- 		name = key
+  	el.each do |key, increment|
+ 		name#{increment} = key
  		  counter.each do |elem|
  			  elem.each do |key, val|
  			    if elem[name].has_value?(name)
