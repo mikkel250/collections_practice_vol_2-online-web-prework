@@ -30,7 +30,7 @@ def count_elements(arg)
       if inst[element].has_value?(value) #if the counter hash contains that value (for the name)
         inst[count] += 1  # increment the count=> +1
       else
-        inst[] #otherwise, add the 
+        inst[] #otherwise, add the value from that element's hash to a new key value pair with a count of 1
       end  
     end
   end
