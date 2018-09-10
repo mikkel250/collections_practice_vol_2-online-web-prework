@@ -23,7 +23,7 @@ def remove_non_strings(arg)
 end
 
 def count_elements(arg)
-  inst = {}
+  inst = []
   arg.each do |key, value| 
     if !inst[key] 
       inst < key
