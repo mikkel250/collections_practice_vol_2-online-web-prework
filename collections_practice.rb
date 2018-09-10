@@ -23,6 +23,7 @@ def remove_non_strings(arg)
 end
 
 def count_elements(arg)
+  counter = []
   arg.each do |el|
   	el.each do |key|
  		name = key
