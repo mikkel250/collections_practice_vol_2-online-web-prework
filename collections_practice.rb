@@ -28,7 +28,7 @@ def count_elements(arg)
     if !inst[key] 
       inst < key
     else
-      inst[key] = inst[key] + 1
+      inst[key] += 1
     end
   end
   inst
