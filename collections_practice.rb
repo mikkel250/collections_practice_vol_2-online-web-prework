@@ -24,12 +24,13 @@ end
 
 def count_elements(arg)
   inst = {}
-  arg.collect do |key, value| 
+  arg.each do |key, value| 
     if !inst[key] 
       inst < key
     else
       inst[key] = inst[key] + 1
     end
+  end
   inst
 end
 
