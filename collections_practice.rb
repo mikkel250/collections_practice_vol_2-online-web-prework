@@ -25,10 +25,11 @@ end
 def count_elements(arg)
   inst = []
   arg.each do |key, value| 
-    if !inst[key] 
-      inst < key
-    else
-      inst[key] += 1
+    inst.each do |key, value| 
+      if inst[key] inst < key
+      else
+        inst[key] += 1
+      end  
     end
   end
   inst
